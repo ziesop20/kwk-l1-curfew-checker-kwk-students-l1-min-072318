@@ -7,11 +7,9 @@ end
 simple_curfew_checker(10)
 
 def curfew_checker(time)
-   if time > 23
+   if time >= 11
     puts "you're in trouble"
-  elsifif time == 23 
-    puts "better get home quick"
-  elsif time < 23 
+  elsif time < 11
     puts "keep having fun"
   end
 end
@@ -19,13 +17,36 @@ end
 curfew_checker(10)
 
 def complex_curfew_checker(time)
-  
+  if time > 11
+    puts "you're in trouble"
+  elsif time == 11
+    puts "better get home quick"
+  elsif time < 11
+    puts "keep having fun"
+  end
 end
+complex_curfew_checker(10)
 
-def deluxe_curfew_checker(time)
-  # code goes here
-end
+def deluxe_curfew_checker(time, curfew==11)
+  if time < curfew 
+    puts "You have #{curfew-time} hours!"
+  elsif time - curfew == 0 
+    puts "You better get home quick!"
+  else 
+    puts "You are #{time-curfew} hours over your curfew, get home right away"
+  end
+end 
+deluxe_curfew_checker(10)
 
 def platinum_curfew_checker(current_time, curfew_time)
-  # code goes here
-end
+  if current_time < curfew_time
+    puts "You have #{curfew-time} hours left before curfew!"
+  elsif current_time== curfew_time 
+    puts "You better get home quick!"
+  else 
+    puts "You are #{time-curfew} hours past your curfew, get home right away"
+  end
+end 
+
+puts "What is your curfew?"
+platinum_curfew_checker(gets.to_i)
