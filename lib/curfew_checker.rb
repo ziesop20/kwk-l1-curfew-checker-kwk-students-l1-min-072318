@@ -44,7 +44,7 @@ def platinum_curfew_checker(Time.now.hour, curfew_time)
   elsif Time.now.hour== curfew_time 
     puts "You better get home quick!"
   else 
-    puts "You are #{Time.now.hour-curfew} hours past your curfew, get home right away"
+    puts "You are #{Time.now.hour-curfew_time} hours past your curfew, get home right away"
   end
 end 
 
