@@ -27,7 +27,7 @@ def complex_curfew_checker(time)
 end
 complex_curfew_checker(10)
 
-def deluxe_curfew_checker(time, curfew==11)
+def deluxe_curfew_checker(time, curfew = 11)
   if time < curfew 
     puts "You have #{curfew-time} hours!"
   elsif time - curfew == 0 
