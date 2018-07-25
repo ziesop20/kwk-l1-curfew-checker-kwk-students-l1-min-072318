@@ -38,7 +38,7 @@ def deluxe_curfew_checker(time, curfew = 11)
 end 
 deluxe_curfew_checker(10)
 
-def platinum_curfew_checker(x= Time.new.to_i, curfew_time)
+def platinum_curfew_checker(x= t.strftime("%I"), curfew_time)
   if x< curfew_time
     puts "You have #{curfew_time - x} hours left before curfew!"
   elsif x == curfew_time 
