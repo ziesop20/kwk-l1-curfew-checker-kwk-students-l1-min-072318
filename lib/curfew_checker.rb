@@ -38,13 +38,13 @@ def deluxe_curfew_checker(time, curfew = 11)
 end 
 deluxe_curfew_checker(10)
 
-def platinum_curfew_checker(Time.new, curfew_time)
-  if Time.new < curfew_time
-    puts "You have #{curfew_time - Time.new} hours left before curfew!"
-  elsif Time.new == curfew_time 
+def platinum_curfew_checker(x= Time.new, curfew_time)
+  if x< curfew_time
+    puts "You have #{curfew_time - x} hours left before curfew!"
+  elsif x == curfew_time 
     puts "You better get home quick!"
   else 
-    puts "You are #{Time.new - curfew_time} hours past your curfew, get home right away"
+    puts "You are #{x- curfew_time} hours past your curfew, get home right away"
   end
 end 
 
