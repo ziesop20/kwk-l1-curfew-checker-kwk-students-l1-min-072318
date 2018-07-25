@@ -41,7 +41,7 @@ deluxe_curfew_checker(10)
 def platinum_curfew_checker(Time , curfew_time)
   if Time < curfew_time
     puts "You have #{curfew_time - Time} hours left before curfew!"
-  elsif Time== curfew_time 
+  elsif Time == curfew_time 
     puts "You better get home quick!"
   else 
     puts "You are #{Time-curfew_time} hours past your curfew, get home right away"
